@@ -3,8 +3,6 @@
 #include <cstdint>
 #include "alg.h"
 
-using namespace std;
-
 bool checkPrime(uint64_t value) {
 // вставьте код функции
   int d = 1;
@@ -54,13 +52,13 @@ int main()
   uint64_t value;
   uint64_t n;
   uint64_t hbound;
-  cin >> value;
-  cout<<checkPrime(value)<<endl;
-  cin >> n;
-  cout << nPrime(n) << endl;
-  cin >> value;
-  cout << nextPrime(value) << endl;
-  cin >> hbound;
-  cout << sumPrime(hbound) << endl;
+  std::cin >> value;
+  std::cout<<checkPrime(value)<<std::endl;
+  std::cin >> n;
+  std::cout << nPrime(n) << std::endl;
+  std::cin >> value;
+  std::cout << nextPrime(value) << std::endl;
+  std::cin >> hbound;
+  std::cout << sumPrime(hbound) << std::endl;
   return 0;
 }
