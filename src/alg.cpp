@@ -1,9 +1,5 @@
-// Copyright 2022 NNTU-CS
-#include <iostream>
 #include <cstdint>
 #include "alg.h"
-
-using namespace std;
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
@@ -47,20 +43,4 @@ uint64_t sumPrime(uint64_t hbound) {
     j++;
   }
   return s;
-}
-
-int main()
-{
-  uint64_t value;
-  uint64_t n;
-  uint64_t hbound;
-  cin >> value;
-  cout<<checkPrime(value)<<endl;
-  cin >> n;
-  cout << nPrime(n) << endl;
-  cin >> value;
-  cout << nextPrime(value) << endl;
-  cin >> hbound;
-  cout << sumPrime(hbound) << endl;
-  return 0;
 }
