@@ -46,19 +46,3 @@ uint64_t sumPrime(uint64_t hbound) {
   }
   return s;
 }
-
-int main()
-{
-  uint64_t value;
-  uint64_t n;
-  uint64_t hbound;
-  std::cin >> value;
-  std::cout<<checkPrime(value)<<std::endl;
-  std::cin >> n;
-  std::cout << nPrime(n) << std::endl;
-  std::cin >> value;
-  std::cout << nextPrime(value) << std::endl;
-  std::cin >> hbound;
-  std::cout << sumPrime(hbound) << std::endl;
-  return 0;
-}
